@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getEntriesByCategory } from "@/app/data/catalog";
+import Image from "next/image";
 
 export default function LandingPagesPage() {
   const entries = getEntriesByCategory("landing-pages");
@@ -27,7 +28,9 @@ export default function LandingPagesPage() {
                   href={`/landing-pages/${entry.slug}`}
                   className="block overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm transition hover:border-neutral-300 hover:shadow-md"
                 >
-                  <div className="aspect-video w-full bg-neutral-100" />
+                  <div>
+                    <Image src={entry.image} alt={entry.title} width={1000} height={1000} className="object-cover w-full h-full" unoptimized />
+                  </div>
                   <div className="p-5">
                     <h2 className="font-semibold text-neutral-900">
                       {entry.title}

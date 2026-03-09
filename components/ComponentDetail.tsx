@@ -14,7 +14,6 @@ type ComponentDetailProps = {
 
 export default function ComponentDetail({ entry, code }: ComponentDetailProps) {
 
-  const [fullScreen, setFullScreen] = useState(false);
   const [height, setHeight] = useState(true);
 
 
@@ -32,7 +31,8 @@ export default function ComponentDetail({ entry, code }: ComponentDetailProps) {
           {/* preview section */}
           <section className="w-full flex justify-center items-center">
             <div className="overflow-hidden rounded-lg border">
-              <div className="h-[360px] lg:h-[420px] w-fit relative">
+              <div className={`w-full h-full}`}
+              >
                 <Image src={entry.image} alt={entry.title} width={800} height={1000} className="w-full h-full object-cover" unoptimized />
               </div>
             </div>

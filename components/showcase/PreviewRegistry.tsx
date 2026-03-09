@@ -4,7 +4,7 @@ import React, { lazy, Suspense } from "react";
 import type { ComponentType } from "react";
 
 const BloomAILanding = lazy(
-  () => import("@/components/showcase/landing-pages/BloomAILanding")
+  () => import("@/components/showcase/hero-sections/BloomAILanding")
 );
 
 const registry: Record<string, ComponentType> = {

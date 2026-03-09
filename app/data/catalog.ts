@@ -20,9 +20,18 @@ export const catalog: CatalogEntry[] = [
     title: "BloomAI Landing",
     image: "https://pbs.twimg.com/media/HCnSZwcawAABrLj?format=jpg&name=4096x4096",
     description: "Full landing page with hero, feature grid, testimonial, and CTAs. Soft pink palette and motion animations.",
-    category: "landing-pages",
+    category: "hero-sections",
     tags: ["landing", "hero", "motion", "tailwind"],
-    codeFilePath: "components/showcase/landing-pages/BloomAILanding.tsx"
+    codeFilePath: "components/showcase/hero-sections/BloomAILanding.tsx"
+  },
+  {
+    slug: "escape-hero",
+    title: "Escape Hero",
+    image: "https://pbs.twimg.com/media/HCzclCsbcAEmua-?format=jpg&name=4096x4096",
+    description: "Full landing page with hero, feature grid, testimonial, and CTAs. Soft pink palette and motion animations.",
+    category: "hero-sections",
+    tags: ["landing", "hero", "motion", "tailwind"],
+    codeFilePath: "components/showcase/hero-sections/EscapeHero.tsx"
   }
 ];
 
