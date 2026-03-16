@@ -4,19 +4,19 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import {motion} from "motion/react";
 
-export default function BolaLandingPage() {
+export default function TrainHero() {
   const [email, setEmail] = useState('');
 
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black">
       <Head>
-        <title>Bola | Focus in a Distracted World</title>
+        <title>Train Hero | Focus in a Distracted World</title>
         <meta name="description" content="Tools for deep work and clarity." />
       </Head>
 
       {/* --- Navigation --- */}
       <nav className="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-6 ">
-        <div className="text-2xl font-bold tracking-tight">Bola</div>
+        <div className="text-2xl font-bold tracking-tight">Train Hero</div>
         
         <div className="hidden md:flex items-center gap-8 px-6 py-2 glass-card rounded-full">
           {['Features', 'Docs', 'News', 'About'].map((item) => (
